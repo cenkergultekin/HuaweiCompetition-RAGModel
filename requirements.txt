@@ -28,4 +28,3 @@ pandas>=2.0.0
 
 # Optional: For enhanced PDF processing
 pypdf>=3.0.0
-
