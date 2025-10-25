@@ -1,0 +1,60 @@
+{
+  "required_parameters": {
+    "project_scope": {
+      "project_type": {
+        "question": "What type of project do you want to deploy? (Press Enter for default: web-application)",
+        "options": ["mobile-backend", "web-application", "ai-ml-service", "iot-platform", "data-analytics", "other"],
+        "default": "web-application",
+        "criticality": "high",
+        "unknown_warning": "Default web application architecture will be used"
+      },
+      "user_scale": {
+        "question": "What is your estimated user count? (Press Enter for default: small-1k)",
+        "options": ["small-1k", "medium-10k", "large-100k", "enterprise-1M+"],
+        "default": "small-1k", 
+        "criticality": "medium",
+        "unknown_warning": "Cost-optimized architecture will be used for small scale"
+      }
+    },
+    
+    "technical_requirements": {
+      "data_characteristics": {
+        "question": "What type of data are you processing? (Press Enter for default: structured-db)",
+        "options": ["structured-db", "file-storage", "media-rich", "real-time-stream", "mixed"],
+        "default": "structured-db",
+        "criticality": "high",
+        "unknown_warning": "Default relational database architecture will be used"
+      },
+      "performance_needs": {
+        "question": "What are your performance requirements? (Press Enter for default: balanced)",
+        "options": ["cost-optimized", "balanced", "high-performance", "real-time-critical"],
+        "default": "balanced",
+        "criticality": "medium",
+        "unknown_warning": "Balanced performance-cost architecture will be recommended"
+      }
+    },
+    
+    "operational_constraints": {
+      "availability_requirements": {
+        "question": "How long should the system run without interruption? (Press Enter for default: basic-uptime)",
+        "options": ["basic-uptime", "business-hours", "high-availability", "mission-critical"],
+        "default": "basic-uptime", 
+        "criticality": "medium",
+        "unknown_warning": "Basic availability architecture will be created"
+      },
+      "security_compliance": {
+        "question": "Do you have special security/privacy requirements? (Press Enter for default: basic-security)",
+        "options": ["basic-security", "data-privacy-gdpr", "financial-pci", "healthcare-hipaa", "not-sure"],
+        "default": "basic-security",
+        "criticality": "high",
+        "unknown_warning": "Basic security measures will be used, please inform if you have sensitive data"
+      }
+    }
+  },
+  
+  "collection_strategy": {
+    "max_questions": 6,
+    "priority_order": ["project_type", "data_characteristics", "user_scale", "security_compliance", "performance_needs", "availability_requirements"],
+    "fallback_approach": "use_safe_defaults_with_warnings"
+  }
+}

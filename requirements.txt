@@ -1,0 +1,31 @@
+# Core LangChain packages
+langchain-community==0.3.0
+langchain-openai==0.2.0
+langchain-huggingface==0.1.0
+langchain-text-splitters==0.3.0
+
+# Vector store and embeddings
+faiss-cpu==1.8.0
+
+# PDF processing
+PyPDF2==3.0.1
+
+# Progress bars
+tqdm==4.66.1
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Standard library dependencies (usually included with Python)
+# os - built-in
+# json - built-in
+# glob - built-in
+# typing - built-in (Python 3.5+)
+
+# Optional: For better performance and compatibility
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Optional: For enhanced PDF processing
+pypdf>=3.0.0
+
