@@ -1,8 +1,8 @@
-# 🚀 Huawei Cloud RAG - Q&A System
+# Huawei Cloud RAG - Q&A System
 
 Huawei Cloud dokümantasyonu üzerinden RAG tabanlı soru-cevap sistemi.
 
-## 📁 Proje Yapısı
+## Proje Yapısı
 
 - **`main.py`** - Ana uygulama, soru-cevap döngüsü
 - **`rag_engine.py`** - RAG motoru, doküman retrieval
@@ -14,7 +14,7 @@ Huawei Cloud dokümantasyonu üzerinden RAG tabanlı soru-cevap sistemi.
 - **`embed_builder.py`** - PDF'lerden vektör indeksi oluşturma
 - **`config.py`** - Sistem konfigürasyonu
 
-## 🚀 Kurulum
+## Kurulum Adımları
 
 ### 1. Sanal Ortam
 ```bash
@@ -38,8 +38,7 @@ QWEN_MODEL=your_model
 
 ### 4. PDF Dosyaları
 ```bash
-mkdir docs
-# PDF dosyalarınızı docs/ klasörüne koyun
+# PDF dosyalarınızı docs/ klasörüne koyun, repoda varsa gerek yok.
 ```
 
 ### 5. Vektör İndeksi (İlk Kurulum)
@@ -53,7 +52,7 @@ Repoda eğer embeddings/faiss_index/index.faiss varsa bunu çalıştırmana gere
 python main.py
 ```
 
-## 🎯 Kullanım
+## Kullanım Şekli
 
 **Normal Soru:**
 ```
